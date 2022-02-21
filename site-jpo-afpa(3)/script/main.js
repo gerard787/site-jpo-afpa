@@ -21,7 +21,6 @@ profil_jeunes.addEventListener("mouseover", () => {
 	migrants.style.display = "none";
 	handicap.style.display = "none";
 });
-
 profil_salarie.addEventListener("mouseover", () => {
 	jeunes.style.display = "none";
 	salarie.style.display = "block";
