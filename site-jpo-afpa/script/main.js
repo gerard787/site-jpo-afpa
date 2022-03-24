@@ -1,29 +1,55 @@
-let jeunes = document.getElementById("jeunes");
-let profil_jeunes = document.getElementById("profil_jeunes");
+const jeunes = document.getElementById("jeunes");
+const profil_jeunes = document.getElementById("profil_jeunes");
 
-profil_jeunes.addEventListener("mouseover", () => {jeunes.style.display = "block";});
-profil_jeunes.addEventListener("mouseout", () => {jeunes.style.display = "none";});
+const salarie = document.getElementById("salarie");
+const profil_salarie = document.getElementById("profil_salarie");
 
-let salarie = document.getElementById("salarie");
-let profil_salarie = document.getElementById("profil_salarie");
+const reconversion = document.getElementById("reconversion");
+const profil_reconversion = document.getElementById("profil_reconversion");
 
-profil_salarie.addEventListener("mouseover", () => {salarie.style.display = "block";});
-profil_salarie.addEventListener("mouseout", () => {salarie.style.display = "none";});
+const migrants = document.getElementById("migrants");
+const profil_migrants = document.getElementById("profil_migrants");
 
-let reconversion = document.getElementById("reconversion");
-let profil_reconversion = document.getElementById("profil_reconversion");
+const handicap = document.getElementById("handicap");
+const profil_handicap = document.getElementById("profil_handicap");
 
-profil_reconversion.addEventListener("mouseover", () => {reconversion.style.display = "block";});
-profil_reconversion.addEventListener("mouseout", () => {reconversion.style.display = "none";});
 
-let migrants = document.getElementById("migrants");
-let profil_migrants = document.getElementById("profil_migrants");
+profil_jeunes.addEventListener("mouseover", () => {
+	jeunes.style.display = "block";
+	salarie.style.display = "none";
+	reconversion.style.display = "none";
+	migrants.style.display = "none";
+	handicap.style.display = "none";
+});
+profil_salarie.addEventListener("mouseover", () => {
+	jeunes.style.display = "none";
+	salarie.style.display = "block";
+	reconversion.style.display = "none";
+	migrants.style.display = "none";
+	handicap.style.display = "none";
+});
 
-profil_migrants.addEventListener("mouseover", () => {migrants.style.display = "block";});
-profil_migrants.addEventListener("mouseout", () => {migrants.style.display = "none";});
+profil_reconversion.addEventListener("mouseover", () => {
+	jeunes.style.display = "none";
+	salarie.style.display = "none";
+	reconversion.style.display = "block";
+	migrants.style.display = "none";
+	handicap.style.display = "none";
+});
 
-let handicap = document.getElementById("handicap");
-let profil_handicap = document.getElementById("profil_handicap");
+profil_migrants.addEventListener("mouseover", () => {
+jeunes.style.display = "none";
+	salarie.style.display = "none";
+	reconversion.style.display = "none";
+	migrants.style.display = "block";
+	handicap.style.display = "none";
+});
 
-profil_handicap.addEventListener("mouseover", () => {handicap.style.display = "block";});
-profil_handicap.addEventListener("mouseout", () => {handicap.style.display = "none";});
+profil_handicap.addEventListener("mouseover", () => {
+jeunes.style.display = "none";
+	salarie.style.display = "none";
+	reconversion.style.display = "none";
+	migrants.style.display = "none";
+	handicap.style.display = "block";
+});
+// profil_handicap.addEventListener("mouseout", () => {handicap.style.display = "none";});

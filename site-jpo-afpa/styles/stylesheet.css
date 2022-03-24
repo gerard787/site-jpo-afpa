@@ -1,10 +1,20 @@
 /*body_______________________________________________________________________*/
+html{
+	height: 100%;
+}
 body {
-	font-family: gothammedium;
-    max-width: 100%;
+	font-family: 'gothammedium';
+    background-color: white;
+    min-height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	padding-bottom: 5em;
 }
 /*header______________________________________________________________________*/
-* {
+* { 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 }
@@ -15,83 +25,48 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
-#bandeau {
+.bandeau {
 	background-image: url('../images/belledonne.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 150px;
 	max-width: 100%;
-	
-}
-p {
-	text-align: center;
-	margin-left: 20px;
-	margin-top: 25px;
-	margin-bottom: 50px;
-	color: black;
 }
 img{
 	height: 150px;
 	width: 146px;
 }
 /*nav_________________________________________________________________________*/
-
-#menu ul {
-	display: flex;
-	justify-content: space-evenly;
-	list-style: none;	
-	background-color: #87bb34;
-	height: 30px;
-	margin-top: -1px;
-}
-#menu ul img {
-	height: 20px;
-	width: 20px;
-	margin-top: 5px;
-}
-#menu li a{
-	color: white;
-}
-#menu a:hover{
-	color: #00aaff;
-}
-#ado {
-	display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-#ado img{
-    box-shadow: 6px 6px 6px black;
-}
-div h1 {
+.infos h1{
 	display: flex;
 	justify-content: space-evenly;
 	color: #00aaff;
-	border-radius: 5px;
-	box-shadow: 6px 6px 6px grey;
-	background-color: rgba(0, 0, 0, 0.1);
-	margin-left: 500px;
-	margin-right: 500px;
 	margin-top: 50px;
-	margin-bottom: 50px;
-
+	margin-bottom: 30px;
+	text-shadow: lightgrey 5px 8px;
 }
-div h2{
-	display: flex;
-	justify-content: space-evenly;
+.infos h2{
+	text-align: center;
 	color: #00aaff;
-	box-shadow: 6px 6px 6px grey;
-	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0.1);
-	margin-top: 5px;
-	margin-left: 400px;
-	margin-right: 400px; 
+	margin-top: 30px;
+	margin-bottom: 15px;
+	text-shadow: lightgrey 5px 8px;
 }
-.infos a {
+.infos div h3{
+	text-align: center;
+	color: #00aaff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-shadow: lightgrey 5px 8px;
+}
+.list ul li {
+	padding-top: 5px;
+	list-style: none;
+	text-align: center;
+}
+.infos a{
     color: orange;
+	text-decoration: none;
 }
 .infos a:hover{
     color: #00aaff;
@@ -101,166 +76,201 @@ div h2{
 	color: black;
 	padding-top: 10px;
 }
-.infos p{
-	text-align: center;
-}
-.infos img{
-	box-shadow: 6px 6px 6px black;
-	height: 300px;
-	width: 600px;
-}
 .infos div img{
 	margin-bottom: 40px;
 }
-.infos div a{
-	color: white;
-}
-.nav ul{
+.menu ul{
 	display: flex;
 	justify-content: space-evenly;
 	list-style: none;	
 	background-color: #87bb34;
 	height: 30px;
-	margin-top: -1px;
+	margin-bottom: 5px; 
 }
-.nav ul img{
+.menu ul img{
 	height: 20px;
 	width: 20px;
 	margin-top: 5px;
 }
-.nav ul li{
+.menu ul li{
 	text-align: center;
 	color: white;
 }
-.nav p{
-	text-align: center;
-}
-.nav a{
+.menu a{
 	color: white;
 }
-.nav a:hover{
-	color: #00aaff;
+.menu a:hover{
+	color:	#e3007e;
 }
-#logo {
+.logo {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-evenly; 
 	flex-wrap: wrap;
+	margin-top: 100px;
 }
-.logo_eu {
-	height: 200px;
-}
+.logo_ue img{
+	display:block;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+} 
 /*main__________________________________________________________________________*/
-.public_images {
+#public_images {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	margin-left: 25px;
 	margin-top: 50px;
 }
-.public_images img {
-	box-shadow: 6px 6px 6px black;
+#public_images img {
+	box-shadow: 6px 6px 6px lightgrey;
 }
-.public_images div {
+#public_images div {
+	flex-direction: column;
 	text-align: center;
-	margin-bottom: 5px;
+	/* margin-bottom: 5px; */
 }
-.public_images>div:hover{
+#public_images>div:hover{
 	opacity: 100%;
 }
-.public_images>div{
+#public_images>div{
 	opacity: 60%;
 }
-.public_images a {
+.cat p {	 
 	color: black;
 	text-decoration: none;
 }
-.public_images a:hover {
-	color: #00aaff;
-}
-#public h1{
-	box-shadow: 6px 6px 6px grey;
-}
 #jeunes {
 	display: none;
-	margin-top: 10px;
 	padding-bottom: 5px;
 }
-#jeunes h2 {
-	text-align: center;
-	padding-top: 5px;
-	background-color: rgba(0, 0, 0, 0.1);
-	
+#jeunes div a{
+	padding-bottom: 10px;
+	margin-top: 10px;
 }
+
 #salarie {
 	display: none;
 	padding-bottom: 5px;
 }
-#salarie h2{
-	text-align: center;
-	padding-top: 5px;
+#salarie div a{
+	padding-bottom: 10px;
+	margin-top: 10px;
 }
 #reconversion{
 	display: none;
 	padding-bottom: 5px;
 }
-#reconversion h2{
-	text-align: center;
-	padding-top: 5px;
+#reconversion div a{
+	padding-bottom: 10px;
+	margin-top: 10px;
 }
 #migrants {
 	display: none;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
-#migrants h2{
-	text-align: center;
-	padding-top: 5px;
+#migrants div a{
+	padding-bottom: 10px;
+	margin-top: 10px;
 } 
 #handicap {
 	display: none;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
-#handicap h2{
-	text-align: center;
-	padding-top: 5px;
+#handicap div a{
+	padding-bottom: 10px;
+	margin-top: 10px;
 }
-#infos div{
+.col p{
+	text-align: left;
+	margin-top: 10px;
+	width: 800px;
+}
+.infos div{
 	display: flex;
 	justify-content: center;
 }
-iframe {
-	text-align: center;
+.ado img {
+	margin: 50px;
+    margin-top: 50px;
+    box-shadow: 6px 6px 6px lightgrey;
 }
-.vid {
+iframe{
 	display: flex;
+    margin: 10px;
+    margin-top: 40px;
+}
+/*pages_________________________________________________________________________________________*/
+.contenu {
+	background-image: url('../images/belledonne.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+	max-width: 100%;
+}
+.centre img{
+	height: 500px;
+	width: 500px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.list li{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.list h3{
+	display: flex;
+	text-align: center;
+	color:#00aaff;
+	margin-bottom: 15px;
+}
+.list p{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.list a{
+	color: orange;
+	
+}
+.list a:hover{
+	color: #00aaff;
+}
+.carte {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 /*footer________________________________________________________________________________________*/	
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 .social {
 	display: flex;
 	justify-content: space-evenly;
-	border-top: 2px solid black;
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
-	border-left: 2px solid black;
-	border-radius: 5px;
-	box-shadow: 6px 6px 6px black;
-	background-color: rgba(0, 0, 0, 0.1);
-	margin-top: 50px;
+	background-color: #87bb34;
 }
 .social img{	
 	height: 25px;
 	width: 25px;
+	margin-top: 5px;
 }
-.social div{	
+.social div {	
 	text-align: center;
-	margin-top: 2px;
-	margin-bottom: 2px;	
-	font-size: small;
+	margin-bottom: 5px;
 }
 .social a {
 	color: white;
 }
 .social a:hover {
 	color: #00aaff;
+}
+.real p{
+	text-align: center;
+	font-size: xx-small;
 }
 
